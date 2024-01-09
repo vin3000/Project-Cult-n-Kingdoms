@@ -7,7 +7,7 @@ public class Movement : MonoBehaviour
     // Start is called before the first frame update
     Rigidbody2D myRigidBody;
     [SerializeField]
-    Vector3 force = new();
+    Vector2 force = new();
     void Start()
     {
         myRigidBody = GetComponent<Rigidbody2D>();
@@ -18,7 +18,7 @@ public class Movement : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space) && myRigidBody.velocity.y == 0)
         {
-            myRigidBody.AddForce(new Vector3(0, 10, 0), ForceMode2D.Impulse);
+            myRigidBody.AddForce(new Vector3(0, force.y, 0), ForceMode2D.Impulse);
         }
     }
     private void FixedUpdate()
