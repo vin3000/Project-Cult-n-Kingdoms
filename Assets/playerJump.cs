@@ -20,7 +20,7 @@ public class playerJump : MonoBehaviour
     {
         isGrounded = Physics2D.OverlapBox(new Vector2(transform.position.x + xOffset, transform.position.y + yOffset), new Vector2(xSize, ySize), 0f, groundMask);
 
-        if(Input.GetKeyDown(KeyCode.UpArrow) && isGrounded)
+        if(Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpSpeed);
 

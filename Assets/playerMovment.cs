@@ -16,7 +16,7 @@ public class playerWalk : MonoBehaviour
     
     void Update()
     {
-        moveInputH = Input.GetAxis("Horizontal");
+        moveInputH = Input.GetAxisRaw("Horizontal");
         rb.velocity = new Vector2(moveInputH * speed, rb.velocity.y);
 
         if(moveInputH != 0)
