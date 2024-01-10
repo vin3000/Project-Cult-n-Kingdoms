@@ -18,24 +18,24 @@ public class Movement : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space) && myRigidBody.velocity.y == 0)
         {
-            myRigidBody.AddForce(new Vector3(0, force.y, 0), ForceMode2D.Impulse);
+            myRigidBody.AddForce(new Vector2(0, force.y), ForceMode2D.Impulse);
         }
     }
     private void FixedUpdate()
     {
         if (Input.GetKey(KeyCode.A))
         {
-            myRigidBody.AddForce(new Vector3(-force.x, 0, 0));
+            myRigidBody.AddForce(new Vector2(-force.x, 0));
         }
         if (Input.GetKey(KeyCode.D))
         {
-            myRigidBody.AddForce(new Vector3(force.x, 0, 0));
+            myRigidBody.AddForce(new Vector2(force.x, 0));
         }
         if (gameObject.transform.position.y < -10)
         {
-            gameObject.transform.position = new Vector3(0, (float)0.5, 0);
+            gameObject.transform.position = new Vector2(0, (float)0.5);
             gameObject.transform.rotation = Quaternion.Euler(0, 0, 0);
-            myRigidBody.velocity = new Vector3(0, 0, 0);
+            myRigidBody.velocity = new Vector2(0, 0);
 
         }
     }
