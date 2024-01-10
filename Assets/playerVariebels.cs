@@ -5,6 +5,6 @@ using UnityEngine;
 public class playerVariebels : MonoBehaviour
 {
 
-    public static bool isWalking;
+    public static bool isWalking, isJumping;
 
 }
