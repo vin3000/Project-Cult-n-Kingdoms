@@ -8,7 +8,7 @@ public class Mainscene : MonoBehaviour
     public void PlayGame() 
     {
         SceneManager.LoadSceneAsync(1);
-       
+        new WaitForSeconds(5);
 }
     // Start is called before the first frame update
     void Start()
