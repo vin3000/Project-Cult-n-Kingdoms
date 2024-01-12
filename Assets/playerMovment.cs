@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class playerWalk : MonoBehaviour
@@ -16,10 +17,21 @@ public class playerWalk : MonoBehaviour
     
     void Update()
     {
+
+        if (!playerVariebels.isRunning)
+        {
+            speed = 8;
+        }
+        if (playerVariebels.isRunning)
+        {
+            speed = 15;
+        }
+        
+        
         moveInputH = Input.GetAxisRaw("Horizontal");
         rb.velocity = new Vector2(moveInputH * speed, rb.velocity.y);
 
-        if(moveInputH != 0)
+        if (moveInputH != 0)
         {
 
             playerVariebels.isWalking = true;
@@ -30,8 +42,9 @@ public class playerWalk : MonoBehaviour
             playerVariebels.isWalking = false;
         }
 
+       
 
-              
+
 
     }
 
