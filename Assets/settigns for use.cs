@@ -1,12 +1,9 @@
-using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-
-public class SETTINGS : MonoBehaviour
+public class settignsforuse : MonoBehaviour
 {
     public GameObject settingsmenu;
     public Text MusicOn;
@@ -26,13 +23,13 @@ public class SETTINGS : MonoBehaviour
     }
     public void SettingButton()
     {
-        MainMenu.SetActive(false);
-        settingsmenu.SetActive(true);
+        MainMenu.SetActive(true);
+        settingsmenu.SetActive(false);
     }
     public void MenuBackButton()
     {
-        MainMenu.SetActive(true);
-        settingsmenu.SetActive(false);
+        MainMenu.SetActive(false);
+        settingsmenu.SetActive(true);
     }
     public void MusicButton()
     {
@@ -41,16 +38,14 @@ public class SETTINGS : MonoBehaviour
             backgroundMusic.Stop();
             MusicOn.text = "music:Off";
             backgroundMusicActive = false;
-        }else
+        }
+        else
         {
             backgroundMusic.Play();
             MusicOn.text = "Music: On";
             backgroundMusicActive = true;
         }
     }
-     
-    
-
     // Update is called once per frame
     void Update()
     {
