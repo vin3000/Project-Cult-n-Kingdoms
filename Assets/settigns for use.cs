@@ -6,7 +6,6 @@ using UnityEngine.UI;
 public class settignsforuse : MonoBehaviour
 {
     public GameObject settingsmenu;
-    public Text MusicOn;
     public GameObject MainMenu;
     public AudioSource backgroundMusic;
     public bool backgroundMusicActive = true;
@@ -23,26 +22,24 @@ public class settignsforuse : MonoBehaviour
     }
     public void SettingButton()
     {
-        MainMenu.SetActive(true);
-        settingsmenu.SetActive(false);
+        MainMenu.SetActive(false);
+        settingsmenu.SetActive(true);
     }
     public void MenuBackButton()
     {
-        MainMenu.SetActive(false);
-        settingsmenu.SetActive(true);
+        MainMenu.SetActive(true);
+        settingsmenu.SetActive(false);
     }
     public void MusicButton()
     {
         if (backgroundMusicActive)
         {
             backgroundMusic.Stop();
-            MusicOn.text = "music:Off";
             backgroundMusicActive = false;
         }
         else
         {
             backgroundMusic.Play();
-            MusicOn.text = "Music: On";
             backgroundMusicActive = true;
         }
     }
