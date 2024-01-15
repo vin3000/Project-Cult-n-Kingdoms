@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class endcode : MonoBehaviour
 {
-    public bool Applicationquit = true;
+    §§
     // Start is called before the first frame update
     void Start()
     {
