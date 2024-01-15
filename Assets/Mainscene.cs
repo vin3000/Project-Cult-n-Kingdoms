@@ -10,6 +10,10 @@ public class Mainscene : MonoBehaviour
         SceneManager.LoadSceneAsync(1);
         new WaitForSeconds(5);
 }
+    public void Endgame()
+    {
+        Application.Quit();
+    }
     // Start is called before the first frame update
     void Start()
     {

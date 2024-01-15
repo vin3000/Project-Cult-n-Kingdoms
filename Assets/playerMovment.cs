@@ -26,22 +26,24 @@ public class playerWalk : MonoBehaviour
         {
             speed = 15;
         }
+
         
+
+
+            moveInputH = Input.GetAxisRaw("Horizontal");
+            rb.velocity = new Vector2(moveInputH * speed, rb.velocity.y);
+
+            if (moveInputH != 0)
+            {
+
+                playerVariebels.isWalking = true;
+
+            }
+            else
+            {
+                playerVariebels.isWalking = false;
+            }
         
-        moveInputH = Input.GetAxisRaw("Horizontal");
-        rb.velocity = new Vector2(moveInputH * speed, rb.velocity.y);
-
-        if (moveInputH != 0)
-        {
-
-            playerVariebels.isWalking = true;
-
-        }
-        else
-        {
-            playerVariebels.isWalking = false;
-        }
-
        
 
 
