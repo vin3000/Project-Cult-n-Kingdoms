@@ -9,6 +9,7 @@ public class playerWalk : MonoBehaviour
     private Rigidbody2D rb;
     private float moveInputH;
     public float speed;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -50,6 +51,7 @@ public class playerWalk : MonoBehaviour
 
     }
 
-     
+   
+    
 
 }

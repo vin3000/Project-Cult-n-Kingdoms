@@ -30,7 +30,7 @@ public class playerLedgegrab : MonoBehaviour
         if (playerVariebels.isGrabbing)
         {
             rb.velocity = new Vector2(0f, 0f);
-            rb.gravityScale = 0f;
+            
         }
 
     }
