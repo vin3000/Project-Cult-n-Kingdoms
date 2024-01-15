@@ -1410,14 +1410,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91037a45171dcd54384ff68c78a581df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  redXOffset: 0.88
-  redYOffset: 1.03
-  redXSize: 0.35
-  redYSize: 0.12
-  greenXOffset: 0.6
-  greenYOffset: 0.48
-  greenXSize: 0.35
-  greenYSize: 0.12
+  redXOffset: 0.94
+  redYOffset: 1.28
+  redXSize: 0.44
+  redYSize: 0.27
+  greenXOffset: 0.58
+  greenYOffset: 0.72
+  greenXSize: 0.43
+  greenYSize: 0.18
   groundMask:
     serializedVersion: 2
     m_Bits: 64
