@@ -1,0 +1,1064 @@
+fileFormatVersion: 2
+guid: 971d804f05987b0408078b9a7a5ce488
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: toothless-toothless-dragon_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1700
+        width: 400
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a616e468e9b25c9458860dfb33395d8b
+      internalID: 881185286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toothless-toothless-dragon_1
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1700
+        width: 400
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a0bef35030e65a439f46e3c7344b828
+      internalID: -1865313032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toothless-toothless-dragon_2
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 1700
+        width: 400
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a969a5d1ee1123d408e2d9f1737938ed
+      internalID: -2051938773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toothless-toothless-dragon_3
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1700
+        width: 400
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d33c836eceab0814199188fbcead7ec7
+      internalID: 303366796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toothless-toothless-dragon_4
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 1700
+        width: 400
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5aad6dfc46e1d549a73b15186f0d559
+      internalID: 1265230557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toothless-toothless-dragon_5
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 1700
+        width: 400
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb5fafebaf9b50e469f611935c7b33d0
+      internalID: 1208868663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toothless-toothless-dragon_6
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 1700
+        width: 400
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b759ebe3b3152b419740a9d335873cb
+      internalID: 1271743794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toothless-toothless-dragon_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1360
+        width: 400
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a60575eed280b4479c24aa12d080e9b
+      internalID: 527899751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toothless-toothless-dragon_8
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1360
+        width: 400
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21284ec2a45e28942939811bfda34de6
+      internalID: 978143701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toothless-toothless-dragon_9
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 1360
+        width: 400
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a8e4c27c5f2620489c867f6c516570c
+      internalID: -965883978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toothless-toothless-dragon_10
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1360
+        width: 400
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a9a8b97cb8bc9d48ba43c77d880a8b3
+      internalID: 942166858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toothless-toothless-dragon_11
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 1360
+        width: 400
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e6c3f8e2cd6d5b4e948b4b69d05ca21
+      internalID: -1211335283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toothless-toothless-dragon_12
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 1360
+        width: 400
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16a4f4675df878146bffe1ec0528e211
+      internalID: -1746633146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toothless-toothless-dragon_13
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 1360
+        width: 400
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a23018fa025200d4fb9d4bede3027b2a
+      internalID: -803335969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toothless-toothless-dragon_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1020
+        width: 400
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba4a53a64273772409d811edc8cc1e3e
+      internalID: -377417697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toothless-toothless-dragon_15
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1020
+        width: 400
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 117fa9177d52d1d428c9dd60135ca5cc
+      internalID: 1968852401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toothless-toothless-dragon_16
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 1020
+        width: 400
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 764891a14e2743a41a1e98d9b357508d
+      internalID: -1489383055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toothless-toothless-dragon_17
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1020
+        width: 400
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a501ee944a6bc749b55f83b93b24b0a
+      internalID: 1022905456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toothless-toothless-dragon_18
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 1020
+        width: 400
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fa08758d6407ef4497e78c3797b2beb
+      internalID: -1542843682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toothless-toothless-dragon_19
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 1020
+        width: 400
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e753fd6cef7e3b047acba80a1fe7fed5
+      internalID: 955844834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toothless-toothless-dragon_20
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 1020
+        width: 400
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae86080ba5bf7894ebb4585a1ee89720
+      internalID: 830449487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toothless-toothless-dragon_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 680
+        width: 400
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dc2d52c489c8be46873b6007ac8925b
+      internalID: 1262990903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toothless-toothless-dragon_22
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 680
+        width: 400
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad7986eb6ab658045a765fb931bdce38
+      internalID: 686762270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toothless-toothless-dragon_23
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 680
+        width: 400
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74d4b19669a2c3c41b33318cddd83a3f
+      internalID: 389785829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toothless-toothless-dragon_24
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 680
+        width: 400
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d96d8f8bf88239645be6f284ef35b191
+      internalID: -328088271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toothless-toothless-dragon_25
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 680
+        width: 400
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c610fa3b9d8792e449696b763792d537
+      internalID: 340866818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toothless-toothless-dragon_26
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 680
+        width: 400
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e351eaf0e926ee42a09b3e2f7164b0e
+      internalID: -1420986138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toothless-toothless-dragon_27
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 680
+        width: 400
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aee6e2e9a21127542a00bff0cbc5e1ce
+      internalID: 239767998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toothless-toothless-dragon_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 340
+        width: 400
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df41eed7dc363b747a0dea139c5102fc
+      internalID: 318421902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toothless-toothless-dragon_29
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 340
+        width: 400
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c90fd6c8c6ee84d4499f635d463267c3
+      internalID: -913724320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toothless-toothless-dragon_30
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 340
+        width: 400
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cd51b6e4446a1f4895520c5f454d7b6
+      internalID: 1903242715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toothless-toothless-dragon_31
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 340
+        width: 400
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9771c6a652e88b24eb06085ba316adbe
+      internalID: 415962908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toothless-toothless-dragon_32
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 340
+        width: 400
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8df6bc3a32d01574eb9641400e5611b9
+      internalID: 1184027853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toothless-toothless-dragon_33
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 340
+        width: 400
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d8752c68a76d274b9a9923a0317a75d
+      internalID: -1293575619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toothless-toothless-dragon_34
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 340
+        width: 400
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 984269bc1de3de44c9f743307a98edc2
+      internalID: 752071823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toothless-toothless-dragon_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 400
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20c7bd6eece9b3f49967a87839ea574c
+      internalID: 622897578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toothless-toothless-dragon_36
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 0
+        width: 400
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07886a654a617d34e9d20cdf21e7a895
+      internalID: -1238260800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toothless-toothless-dragon_37
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 0
+        width: 400
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92b20c54099ba6a49b6c4cfe3fcda2ff
+      internalID: 66683627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toothless-toothless-dragon_38
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 0
+        width: 400
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3df20276c3935cc4ba1499b6a724e826
+      internalID: 1794371886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toothless-toothless-dragon_39
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 0
+        width: 400
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a55eb25fc727b5b49bdd500192e41931
+      internalID: 329596746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toothless-toothless-dragon_40
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 0
+        width: 400
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 570ea6f53b3a8f04a93ef796acdacc2e
+      internalID: -360811126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toothless-toothless-dragon_41
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 0
+        width: 400
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 293dbc614d680144ea5ece5c8de0e446
+      internalID: -1057311056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      toothless-toothless-dragon_0: 881185286
+      toothless-toothless-dragon_1: -1865313032
+      toothless-toothless-dragon_10: 942166858
+      toothless-toothless-dragon_11: -1211335283
+      toothless-toothless-dragon_12: -1746633146
+      toothless-toothless-dragon_13: -803335969
+      toothless-toothless-dragon_14: -377417697
+      toothless-toothless-dragon_15: 1968852401
+      toothless-toothless-dragon_16: -1489383055
+      toothless-toothless-dragon_17: 1022905456
+      toothless-toothless-dragon_18: -1542843682
+      toothless-toothless-dragon_19: 955844834
+      toothless-toothless-dragon_2: -2051938773
+      toothless-toothless-dragon_20: 830449487
+      toothless-toothless-dragon_21: 1262990903
+      toothless-toothless-dragon_22: 686762270
+      toothless-toothless-dragon_23: 389785829
+      toothless-toothless-dragon_24: -328088271
+      toothless-toothless-dragon_25: 340866818
+      toothless-toothless-dragon_26: -1420986138
+      toothless-toothless-dragon_27: 239767998
+      toothless-toothless-dragon_28: 318421902
+      toothless-toothless-dragon_29: -913724320
+      toothless-toothless-dragon_3: 303366796
+      toothless-toothless-dragon_30: 1903242715
+      toothless-toothless-dragon_31: 415962908
+      toothless-toothless-dragon_32: 1184027853
+      toothless-toothless-dragon_33: -1293575619
+      toothless-toothless-dragon_34: 752071823
+      toothless-toothless-dragon_35: 622897578
+      toothless-toothless-dragon_36: -1238260800
+      toothless-toothless-dragon_37: 66683627
+      toothless-toothless-dragon_38: 1794371886
+      toothless-toothless-dragon_39: 329596746
+      toothless-toothless-dragon_4: 1265230557
+      toothless-toothless-dragon_40: -360811126
+      toothless-toothless-dragon_41: -1057311056
+      toothless-toothless-dragon_5: 1208868663
+      toothless-toothless-dragon_6: 1271743794
+      toothless-toothless-dragon_7: 527899751
+      toothless-toothless-dragon_8: 978143701
+      toothless-toothless-dragon_9: -965883978
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
