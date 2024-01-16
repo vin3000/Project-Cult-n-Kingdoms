@@ -12,6 +12,7 @@ public class playermov2 : MonoBehaviour
     public float jumpForce;
     public Transform groundCheck;
     public LayerMask groundLayer;
+    public LayerMask wallLayer;
     bool isGrounded;
     bool jump;
 
@@ -20,6 +21,9 @@ public class playermov2 : MonoBehaviour
     bool isWallTouch;
     bool isSliding;
     public float wallSlidingSpeed;
+    public float wallJumpDuration;
+    public Vector2 wallJumpForce;
+    bool wallJumping;
 
 
     private void Awake()
@@ -35,7 +39,7 @@ public class playermov2 : MonoBehaviour
             jump = true; 
         }
         isGrounded = Physics2D.OverlapBox(groundCheck.position, new Vector2(1.7f, 0.24f), 0, groundLayer);
-        isWallTouch = Physics2D.OverlapBox(wallCheck.position, new Vector2(0.1f, 0.9f), 0, groundLayer);
+        isWallTouch = Physics2D.OverlapBox(wallCheck.position, new Vector2(0.2f, 0.9f), 0, wallLayer);
 
         if(isWallTouch && !isGrounded && h != 0)
         {
@@ -48,10 +52,20 @@ public class playermov2 : MonoBehaviour
 
         flip();
 
+        if (!playerVariebels.isRunning)
+        {
+            speed = 8;
+        }
+        if (playerVariebels.isRunning)
+        {
+            speed = 15;
+        }
+
+
     }
     private void FixedUpdate()
     {
-        rb.velocity = new Vector2(h * speed, rb.velocity.y);
+       
 
         if (jump)
         {
@@ -63,6 +77,15 @@ public class playermov2 : MonoBehaviour
             rb.velocity = new Vector2(rb.velocity.x, Mathf.Clamp(rb.velocity.y, -wallSlidingSpeed, float.MaxValue));
         }
 
+        if (wallJumping)
+        {
+            rb.velocity = new Vector2(-h * wallJumpForce.x, wallJumpForce.y);
+        }
+        else
+        {
+            rb.velocity = new Vector2(h * speed, rb.velocity.y);
+        }
+
     }
 
     void Jump()
@@ -72,7 +95,20 @@ public class playermov2 : MonoBehaviour
             rb.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
 
         }
+
+        else if (isSliding)
+        {
+            wallJumping = true;
+            Invoke("StopWalljump", wallJumpDuration); 
+        }
+
         jump = false;
+
+    }
+
+    void StopWalljump()
+    {
+        wallJumping = false;
     }
 
     void flip()
