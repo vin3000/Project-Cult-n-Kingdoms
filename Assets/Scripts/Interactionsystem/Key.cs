@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Key : MonoBehaviour
 {
-    public bool DoorOpenable = false;
+
     public bool isPickedUp;
     public Animator animator;
     // Start is called before the first frame update
@@ -20,7 +20,7 @@ public class Key : MonoBehaviour
     }
     public void KeyInteract()
     {
-        DoorOpenable = true;
+        
         transform.position = new Vector2(+100, +0);
     }
 }
