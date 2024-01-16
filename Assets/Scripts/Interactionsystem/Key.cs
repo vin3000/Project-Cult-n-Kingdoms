@@ -5,6 +5,8 @@ using UnityEngine;
 public class Key : MonoBehaviour
 {
     public bool DoorOpenable = false;
+    public bool isPickedUp;
+    public Animator animator;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,6 +21,6 @@ public class Key : MonoBehaviour
     public void KeyInteract()
     {
         DoorOpenable = true;
-        Destroy(gameObject);
+        transform.position = new Vector2(+100, +0);
     }
 }
