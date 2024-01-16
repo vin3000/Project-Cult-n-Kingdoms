@@ -703,7 +703,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   wallCheck: {fileID: 564732271}
-  wallSlidingSpeed: 0
+  wallSlidingSpeed: 1
 --- !u!1 &394030483
 GameObject:
   m_ObjectHideFlags: 0
