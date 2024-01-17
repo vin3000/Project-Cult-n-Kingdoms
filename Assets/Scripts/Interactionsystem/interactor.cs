@@ -26,4 +26,22 @@ public class interactor : MonoBehaviour
             }
         }
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            IsInRange = true;
+            Debug.Log("Player now in range");
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            IsInRange = false;
+            Debug.Log("Player now out of range");
+        }
+    }
 }

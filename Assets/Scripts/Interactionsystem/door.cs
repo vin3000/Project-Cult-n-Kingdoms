@@ -2,11 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Key : MonoBehaviour
+public class door : MonoBehaviour
 {
-
-    public bool isPickedUp;
-    public Animator animator;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,10 +14,5 @@ public class Key : MonoBehaviour
     void Update()
     {
         
-    }
-    public void KeyInteract()
-    {
-        
-        transform.position = new Vector2(+100, +0);
     }
 }
