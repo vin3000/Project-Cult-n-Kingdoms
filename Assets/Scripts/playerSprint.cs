@@ -7,7 +7,12 @@ public class playerSprint : MonoBehaviour
     public float totalStamina;
     public float stamina;
     public GameObject staminaBar;
-
+    public bool sprintFeature = false;
+    public void ActivateSprintFeature()
+    {
+        sprintFeature = true;
+        Debug.Log("Activating sprint feature");
+    }
 
     void Awake()
     {
@@ -17,7 +22,7 @@ public class playerSprint : MonoBehaviour
     
     void Update()
     {
-        if(Input.GetKey(KeyCode.LeftShift) && stamina > 0)
+        if(Input.GetKey(KeyCode.LeftShift) && stamina > 0 && sprintFeature)
         {
             playerVariebels.isRunning = true;
             stamina -= 0.25f;
