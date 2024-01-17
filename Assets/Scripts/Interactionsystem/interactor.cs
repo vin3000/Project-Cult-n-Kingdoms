@@ -32,6 +32,7 @@ public class interactor : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             IsInRange = true;
+            collision.gameObject.GetComponent<PlayerInventory>().NotifyPlayer();
             Debug.Log("Player now in range");
         }
     }
@@ -41,6 +42,7 @@ public class interactor : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             IsInRange = false;
+            collision.gameObject.GetComponent<PlayerInventory>().DeNotifyPlayer();
             Debug.Log("Player now out of range");
         }
     }
