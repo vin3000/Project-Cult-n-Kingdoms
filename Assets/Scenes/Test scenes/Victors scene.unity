@@ -159,7 +159,7 @@ MonoBehaviour:
   m_Priority: 10
   m_StandbyUpdate: 2
   m_LookAt: {fileID: 0}
-  m_Follow: {fileID: 0}
+  m_Follow: {fileID: 923911256}
   m_Lens:
     FieldOfView: 60
     OrthographicSize: 6.5711207
@@ -188,7 +188,7 @@ Transform:
   m_GameObject: {fileID: 316975322}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.019999623, y: -0.36, z: -10}
+  m_LocalPosition: {x: -3.1601086, y: -1.171979, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -329,10 +329,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 970088160765052628, guid: 1d823e701212f5f479dbbe17c2009296, type: 3}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
     - target: {fileID: 3939237444311184308, guid: 1d823e701212f5f479dbbe17c2009296, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.1601086
@@ -378,17 +374,27 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d823e701212f5f479dbbe17c2009296, type: 3}
+--- !u!1 &923911248 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 970088160765052628, guid: 1d823e701212f5f479dbbe17c2009296, type: 3}
+  m_PrefabInstance: {fileID: 597635105}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &923911249 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3192279735528320274, guid: 1d823e701212f5f479dbbe17c2009296, type: 3}
   m_PrefabInstance: {fileID: 597635105}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 923911248}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 594fe17ff32907442bfe6555332db138, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!4 &923911256 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3939237444311184308, guid: 1d823e701212f5f479dbbe17c2009296, type: 3}
+  m_PrefabInstance: {fileID: 597635105}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &932073833
 GameObject:
   m_ObjectHideFlags: 0
@@ -734,6 +740,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1423511748 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8590283263895375113, guid: e9e00b83c35f6424184dfc9966c18fba, type: 3}
+  m_PrefabInstance: {fileID: 356651290}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1425599964
 GameObject:
   m_ObjectHideFlags: 0
@@ -869,6 +880,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7307493423332817841, guid: e9e00b83c35f6424184dfc9966c18fba, type: 3}
   m_PrefabInstance: {fileID: 356651290}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1530608049 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 187927153021769016, guid: 68ded00a902855b41bc9131173e39c75, type: 3}
+  m_PrefabInstance: {fileID: 534739676976816160}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1846392256
 GameObject:
   m_ObjectHideFlags: 0
@@ -921,6 +937,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fadfdff3eb787a40b3fa052537434ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Hitbox: {fileID: 1423511748}
   isPickedUp: 0
   spriteRenderer: {fileID: 0}
 --- !u!212 &1846392259
@@ -1129,6 +1146,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 621328733966127968, guid: 68ded00a902855b41bc9131173e39c75, type: 3}
+      propertyPath: Hitbox
+      value: 
+      objectReference: {fileID: 1530608049}
     - target: {fileID: 6198752950999666103, guid: 68ded00a902855b41bc9131173e39c75, type: 3}
       propertyPath: m_LocalPosition.x
       value: -7.34
@@ -1197,7 +1218,7 @@ PrefabInstance:
     - target: {fileID: 4798703325782589596, guid: e856d9cecfe0fd0458bda24dc45dff0a, type: 3}
       propertyPath: InteraAction.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 923911248}
     - target: {fileID: 6036660293773496974, guid: e856d9cecfe0fd0458bda24dc45dff0a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.45
