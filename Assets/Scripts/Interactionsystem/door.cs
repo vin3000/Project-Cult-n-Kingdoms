@@ -21,6 +21,10 @@ public class door : MonoBehaviour
                 }
             }
         }
+        if (IsOpen)
+        {
+            //Ladda nya scenen, med fadeout animation som Victor fixar
+        }
     }
 
 

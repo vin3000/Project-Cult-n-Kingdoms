@@ -270,7 +270,7 @@ GameObject:
   - component: {fileID: 3192279735528320274}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -284,7 +284,7 @@ Transform:
   m_GameObject: {fileID: 970088160765052628}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.5, y: -0.98, z: 0}
+  m_LocalPosition: {x: -3.1601086, y: -1.171979, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -446,7 +446,7 @@ MonoBehaviour:
   totalStamina: 100
   stamina: 0
   staminaBar: {fileID: 853281684888722834}
-  sprintFeature: 1
+  sprintFeature: 0
 --- !u!114 &8529478807268826542
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Key : MonoBehaviour
 {
-
+    public GameObject Hitbox;
     public bool isPickedUp = false;
     float alpha = 1;
     public SpriteRenderer spriteRenderer;
@@ -26,5 +26,6 @@ public class Key : MonoBehaviour
     public void KeyInteract()
     {
         isPickedUp = true;
+        Hitbox.SetActive(false);
     }
 }
