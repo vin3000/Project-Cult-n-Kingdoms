@@ -5,11 +5,18 @@ using UnityEngine.SceneManagement;
 
 public class Mainscene : MonoBehaviour
 {
+    public GameObject sceneChanger;
+
     public void PlayGame() 
     {
+        sceneChanger.GetComponent<SceneChanger>().FadeToScene();
+        Invoke("LoadScene", 1.5f);
+
+    }
+    public void LoadScene()
+    {
         SceneManager.LoadSceneAsync(1);
-        new WaitForSeconds(5);
-}
+    }
     public void Endgame()
     {
         Application.Quit();

@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SceneChanger : MonoBehaviour
 {
@@ -8,10 +9,14 @@ public class SceneChanger : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       
+        if (Input.GetKey(KeyCode.RightControl))
+        {
+            FadeToScene();
+        }
     }
-    public void FadeToScene(int SceneIndex)
+    public void FadeToScene()
     {
         anim.SetTrigger("FadeOut");
+        
     }
 }
