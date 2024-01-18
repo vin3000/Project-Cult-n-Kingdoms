@@ -77343,8 +77343,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 890207659
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 58ce5400e5f85e44da7428b231f43e54, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -82640,6 +82640,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e9e00b83c35f6424184dfc9966c18fba, type: 3}
+--- !u!1 &590390504 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 970088160765052628, guid: 1d823e701212f5f479dbbe17c2009296, type: 3}
+  m_PrefabInstance: {fileID: 2132485003}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &747924454 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1074013083564077691, guid: 6269edc53e9e3d647b0d78d4ece07872, type: 3}
@@ -117129,7 +117134,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 890207659
   m_SortingLayer: 2
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 0820db0e368f13c4abcd061b1bd430f7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -117232,7 +117237,7 @@ Transform:
   m_GameObject: {fileID: 1231337354}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -35.69, y: 1.52, z: -10}
+  m_LocalPosition: {x: 104.64, y: 3.53, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -117351,7 +117356,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3192279735528320274, guid: 1d823e701212f5f479dbbe17c2009296, type: 3}
   m_PrefabInstance: {fileID: 2132485003}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 590390504}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 594fe17ff32907442bfe6555332db138, type: 3}
@@ -117521,8 +117526,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 890207659
+  m_SortingLayer: 2
   m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: 15b5a5672e7944c4591f68f17963815d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -117621,6 +117626,10 @@ PrefabInstance:
       value: door, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 1991365811415045575, guid: 6269edc53e9e3d647b0d78d4ece07872, type: 3}
+      propertyPath: InteraAction.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 590390504}
+    - target: {fileID: 1991365811415045575, guid: 6269edc53e9e3d647b0d78d4ece07872, type: 3}
       propertyPath: InteraAction.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.GameObject, UnityEngine
       objectReference: {fileID: 0}
@@ -117671,11 +117680,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3939237444311184308, guid: 1d823e701212f5f479dbbe17c2009296, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -35.69
+      value: 104.64
       objectReference: {fileID: 0}
     - target: {fileID: 3939237444311184308, guid: 1d823e701212f5f479dbbe17c2009296, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.04
+      value: 1.97
       objectReference: {fileID: 0}
     - target: {fileID: 3939237444311184308, guid: 1d823e701212f5f479dbbe17c2009296, type: 3}
       propertyPath: m_LocalPosition.z
