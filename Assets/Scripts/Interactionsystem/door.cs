@@ -1,11 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class door : MonoBehaviour
 {
     public bool IsOpen;
-
+    public GameObject sceneChanger;
+    float countdown = 3;
+    bool StartCountdown = false;
     public void OpenDoor(GameObject obj)
     {
         if (!IsOpen)
@@ -18,13 +21,19 @@ public class door : MonoBehaviour
                     IsOpen = true;
                     Inventory.UseKey();
                     Debug.Log("door is unlocked");
+                    StartCountdown = true;
                 }
             }
         }
-        if (IsOpen)
+        if (IsOpen && countdown<=0)
         {
-            //Ladda nya scenen, med fadeout animation som Victor fixar
+            sceneChanger.GetComponent<SceneChanger>().FadeToScene();
+            Invoke("LoadScene", 1.5f);
         }
+    }
+    public void LoadScene()
+    {
+        SceneManager.LoadSceneAsync(2);
     }
 
 
@@ -38,6 +47,9 @@ public class door : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (StartCountdown && countdown > 0)
+        {
+            countdown -= Time.deltaTime;
+        }
     }
 }
