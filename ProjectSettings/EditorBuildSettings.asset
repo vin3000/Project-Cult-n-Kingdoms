@@ -9,8 +9,8 @@ EditorBuildSettings:
     path: Assets/Scenes/main menu.unity
     guid: 85fa51ff8dd92704ca148a99796ca060
   - enabled: 1
-    path: Assets/Scenes/Ruins.unity
-    guid: a9b74e21f6bd72f40af45f472c8c6f5c
+    path: Assets/Scenes/Ruins 1.unity
+    guid: ce0a635f361ed084f8f13f0162e2f383
   - enabled: 1
     path: Assets/Scenes/FInalCutscene.unity
     guid: 103dc6a8bcf880c4f9e6d8f5a6e98261
