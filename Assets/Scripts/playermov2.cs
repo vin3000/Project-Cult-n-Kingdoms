@@ -8,6 +8,8 @@ public class playermov2 : MonoBehaviour
     float h;
     public float speed;
     Rigidbody2D rb;
+    //animation stuff dw bout it
+    public Animator animator;
 
     public float jumpForce;
     public Transform groundCheck;
@@ -34,6 +36,8 @@ public class playermov2 : MonoBehaviour
     private void Update()
     {
         h = Input.GetAxisRaw("Horizontal");
+
+        animator.SetFloat("speed", Mathf.Abs(h));
         if (Input.GetKeyDown(KeyCode.Space))
         {
             jump = true; 
@@ -55,17 +59,19 @@ public class playermov2 : MonoBehaviour
         if (!playerVariebels.isRunning)
         {
             speed = 8;
+            animator.SetBool("IsRunning", false);
         }
         if (playerVariebels.isRunning)
         {
             speed = 15;
+            animator.SetBool("IsRunning", true);
         }
 
 
     }
     private void FixedUpdate()
     {
-       
+        
 
         if (jump)
         {
@@ -75,6 +81,13 @@ public class playermov2 : MonoBehaviour
         if (isSliding)
         {
             rb.velocity = new Vector2(rb.velocity.x, Mathf.Clamp(rb.velocity.y, -wallSlidingSpeed, float.MaxValue));
+            //starts sliding animation
+            animator.SetBool("isSliding", true);
+            animator.SetBool("IsJumping", false);
+        }
+        else
+        {
+            animator.SetBool("isSliding", false);
         }
 
         if (wallJumping)
@@ -86,6 +99,17 @@ public class playermov2 : MonoBehaviour
             rb.velocity = new Vector2(h * speed, rb.velocity.y);
         }
 
+        //animator thing
+        if (!isGrounded && !isSliding)
+        {
+            animator.SetBool("IsJumping", true);
+        }
+        else
+        {
+            //if player is on floor, stops animation
+            animator.SetBool("IsJumping", false);
+        }
+
     }
 
     void Jump()
@@ -93,7 +117,6 @@ public class playermov2 : MonoBehaviour
         if (isGrounded)
         {
             rb.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
-
         }
 
         else if (isSliding)
