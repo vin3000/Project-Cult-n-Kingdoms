@@ -25,7 +25,7 @@ public class playerSprint : MonoBehaviour
         if(Input.GetKey(KeyCode.LeftShift) && stamina > 0 && sprintFeature)
         {
             playerVariebels.isRunning = true;
-            stamina -= 0.25f;
+            stamina -= 0.5f;
         }
         
         else
