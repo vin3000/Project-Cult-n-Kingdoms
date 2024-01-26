@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.Tilemaps;
 using UnityEngine;
 
 public class playermov2 : MonoBehaviour
@@ -17,7 +16,8 @@ public class playermov2 : MonoBehaviour
     public LayerMask wallLayer;
     bool isGrounded;
     bool jump;
-    [SerializeField] private AudioSource sprintmoveeffect;
+
+
     [Header("Wall jump system")]
     public Transform wallCheck;
     bool isWallTouch;
@@ -58,7 +58,6 @@ public class playermov2 : MonoBehaviour
 
         if (!playerVariebels.isRunning)
         {
-            sprintmoveeffect.Play();
             speed = 8;
             animator.SetBool("IsRunning", false);
         }

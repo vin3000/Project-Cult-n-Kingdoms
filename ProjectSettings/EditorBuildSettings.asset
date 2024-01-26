@@ -11,7 +11,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Ruins 1.unity
     guid: ce0a635f361ed084f8f13f0162e2f383
-  - enabled: 1
-    path: Assets/Scenes/FInalCutscene.unity
-    guid: 103dc6a8bcf880c4f9e6d8f5a6e98261
   m_configObjects: {}

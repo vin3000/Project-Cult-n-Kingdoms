@@ -33,7 +33,7 @@ public class door : MonoBehaviour
     }
     public void LoadScene()
     {
-        SceneManager.LoadSceneAsync(1);
+        SceneManager.LoadSceneAsync(0);
     }
 
 
