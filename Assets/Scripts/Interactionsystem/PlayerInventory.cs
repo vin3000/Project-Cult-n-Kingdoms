@@ -5,23 +5,23 @@ using UnityEngine;
 public class PlayerInventory : MonoBehaviour
 {
     public GameObject Popup;
-    public int DoorKey = 0;
-    public int OtherKey = 0;
+    public int doorKey = 0;
+    public int otherKey = 0;
 
     public void PickUpDoorKey()
     {
-        DoorKey++;
+        doorKey++;
 
         Debug.Log("Picked up a door key");
     }
     public void PickUpSprintFeature()
     {
-        GetComponent<playerSprint>().ActivateSprintFeature();
+        GetComponent<PlayerSprint>().ActivateSprintFeature();
         Debug.Log("Sending method");
     }
     public void UseKey()
     {
-        DoorKey--;
+        doorKey--;
         Debug.Log("Used Doorkey");
     }
     public void NotifyPlayer()

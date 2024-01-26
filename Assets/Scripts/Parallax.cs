@@ -15,7 +15,7 @@ public class Parallax : MonoBehaviour
     }
     void Update()
     {
-        if (cam.transform.position.x < 61)
+        if (cam.transform.position.x < 62)
         {
             float temp = (cam.transform.position.x * (1 - parallaxEffect));
             float dist = (cam.transform.position.x * parallaxEffect);
