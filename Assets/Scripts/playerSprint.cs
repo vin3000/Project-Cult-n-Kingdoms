@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class playerSprint : MonoBehaviour
+public class PlayerSprint : MonoBehaviour
 {
     public float totalStamina;
     public float stamina;
@@ -17,6 +17,10 @@ public class playerSprint : MonoBehaviour
     void Awake()
     {
         stamina = totalStamina;
+        if (Application.isEditor)
+        {
+            sprintFeature = true;
+        }
     }
 
     
