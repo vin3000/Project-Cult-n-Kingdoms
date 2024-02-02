@@ -6,6 +6,7 @@ public class playermov2 : MonoBehaviour
 {
     float h;
     public float speed;
+    public AudioClip audioData;
     Rigidbody2D rb;
     //animation stuff dw bout it
     public Animator animator;
@@ -27,8 +28,12 @@ public class playermov2 : MonoBehaviour
     public Vector2 wallJumpForce;
     bool wallJumping;
 
+    private AudioSource GetAudio()
+    {
+        return GetComponent<AudioSource>();
+    }
 
-    private void Awake()
+    private void Awake(AudioSource audio)
     {
         rb = GetComponent<Rigidbody2D>();
     }
@@ -38,6 +43,7 @@ public class playermov2 : MonoBehaviour
         h = Input.GetAxisRaw("Horizontal");
 
         animator.SetFloat("speed", Mathf.Abs(h));
+        
         if (Input.GetKeyDown(KeyCode.Space))
         {
             jump = true; 
@@ -99,6 +105,7 @@ public class playermov2 : MonoBehaviour
         else
         {
             rb.velocity = new Vector2(h * speed, rb.velocity.y);
+            audio.Play();
         }
 
         //animator thing

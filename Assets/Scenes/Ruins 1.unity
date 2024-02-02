@@ -139960,6 +139960,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1917791726}
     - target: {fileID: 8529478807268826542, guid: 1d823e701212f5f479dbbe17c2009296, type: 3}
+      propertyPath: audioData
+      value: 
+      objectReference: {fileID: 8300000, guid: aa6430dc92a010541b66a0b86cd9815d, type: 3}
+    - target: {fileID: 8529478807268826542, guid: 1d823e701212f5f479dbbe17c2009296, type: 3}
       propertyPath: jumpForce
       value: 16
       objectReference: {fileID: 0}
