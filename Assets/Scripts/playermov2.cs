@@ -6,7 +6,6 @@ public class playermov2 : MonoBehaviour
 {
     float h;
     public float speed;
-    public AudioClip audioData;
     Rigidbody2D rb;
     //animation stuff dw bout it
     public Animator animator;
@@ -21,19 +20,14 @@ public class playermov2 : MonoBehaviour
 
     [Header("Wall jump system")]
     public Transform wallCheck;
+    public new AudioSource audio;
     bool isWallTouch;
     bool isSliding;
     public float wallSlidingSpeed;
     public float wallJumpDuration;
     public Vector2 wallJumpForce;
     bool wallJumping;
-
-    private AudioSource GetAudio()
-    {
-        return GetComponent<AudioSource>();
-    }
-
-    private void Awake(AudioSource audio)
+    void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
     }
@@ -72,9 +66,16 @@ public class playermov2 : MonoBehaviour
             
             speed = 15;
             animator.SetBool("IsRunning", true);
+            audio.Stop();
             
         }
-
+        if(!playerVariebels.isRunning && audio.isPlaying == false)
+        {
+            audio.Play();
+        } else if(speed == 0)
+        {
+            audio.Stop();
+        }
 
     }
     private void FixedUpdate()
@@ -105,7 +106,6 @@ public class playermov2 : MonoBehaviour
         else
         {
             rb.velocity = new Vector2(h * speed, rb.velocity.y);
-            audio.Play();
         }
 
         //animator thing
