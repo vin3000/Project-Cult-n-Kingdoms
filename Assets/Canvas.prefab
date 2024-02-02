@@ -36,7 +36,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 31, y: 111}
+  m_AnchoredPosition: {x: 0, y: -131}
   m_SizeDelta: {x: -200, y: -600}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2813444984451199415
@@ -91,8 +91,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textcomponent: {fileID: 2700639855247034546}
   lines:
-  - WH-Wh Who are you?!?!?
-  textspeed: 0.3
+  - ':??? Hey! are you okay? '
+  - :???  okay thank god you are okay, if i may ask why are you in the ruins?
+  - :??? You woke up in the ruins without your memories? how horrible!
+  - :??? ah! my apologies i havent introduced myself my name is Eldric, i'm the leader
+    of this group here.
+  - :Eldric as you can see this used to be a village, but unfortunatly it came to
+    its demise 4 days ago when the king  attacked it. It was said that a revolution
+    was arising in the village to fight the king and his injustice.
+  - :Eldric  Well, if you dont have a place to stay you can come with us to our camp.
+    We would be happy to have you.
+  - 
+  - 
+  textspeed: 0.05
 --- !u!1 &5118385820983397451
 GameObject:
   m_ObjectHideFlags: 0
