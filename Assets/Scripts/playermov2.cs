@@ -105,7 +105,7 @@ public class playermov2 : MonoBehaviour
         else
         {
             rb.velocity = new Vector2(h * speed, rb.velocity.y);
-            audio.Play();
+            GetComponent<AudioSource>().Play();
         }
 
         //animator thing
