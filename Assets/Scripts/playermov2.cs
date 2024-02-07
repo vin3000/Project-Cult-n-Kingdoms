@@ -33,7 +33,7 @@ public class playermov2 : MonoBehaviour
         return GetComponent<AudioSource>();
     }
 
-    private void Awake(AudioSource audio)
+    private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
     }
