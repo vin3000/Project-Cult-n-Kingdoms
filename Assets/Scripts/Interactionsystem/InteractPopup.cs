@@ -9,7 +9,7 @@ public class InteractPopup : MonoBehaviour
     public bool isInRange;
     public KeyCode interactKey;
     public UnityEvent interaAction;
-    public GameObject textPopUp;
+    
     //Appearance related
     float alpha = 0;
     public TextMeshPro TMP;
@@ -17,14 +17,13 @@ public class InteractPopup : MonoBehaviour
     public bool isRangeBased; //is chosen in the editor depending on the object
     bool isTouched; 
 
-    // Start is called before the first frame update
-    void Start()
-    {
-    }
-
     // Update is called once per frame
     void Update()
     {
+        if (!isInRange)
+        {
+            isTouched = false;
+        }
         if (isRangeBased)
         {
             if (isInRange && alpha < 1) //if player is in range
@@ -38,7 +37,7 @@ public class InteractPopup : MonoBehaviour
                 TMP.color = new Color(1, 1, 1, alpha);
             }
         }
-        else
+        else if (!isRangeBased)
         {
             if (isTouched && alpha < 1)
             {

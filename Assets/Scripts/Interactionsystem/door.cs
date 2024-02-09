@@ -10,6 +10,8 @@ public class Door : MonoBehaviour
     float countdown = 1;
     bool startCountdown = false;
     public GameObject interactPopup;
+
+    public Animator animator;
     public void OpenDoor(GameObject obj)
     {
         if (!isOpen)
@@ -23,6 +25,7 @@ public class Door : MonoBehaviour
                     Inventory.UseKey();
                     Debug.Log("Door is unlocked.");
                     startCountdown = true;
+                    animator.SetBool("isOpen", true);
                 }
                 else
                 {
