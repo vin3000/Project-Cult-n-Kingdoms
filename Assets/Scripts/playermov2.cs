@@ -6,7 +6,7 @@ public class playermov2 : MonoBehaviour
 {
     float h;
     public float speed;
-    public AudioClip audioData;
+    public AudioSource walkSound;
     Rigidbody2D rb;
     //animation stuff dw bout it
     public Animator animator;
@@ -105,7 +105,14 @@ public class playermov2 : MonoBehaviour
         else
         {
             rb.velocity = new Vector2(h * speed, rb.velocity.y);
-            GetComponent<AudioSource>().Play();
+            AudioSource walkSound = GetAudio();
+            if (walkSound != null)
+            {
+            } 
+            else
+            {
+                print(walkSound);
+            }
         }
 
         //animator thing
