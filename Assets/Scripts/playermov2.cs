@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Xml;
 using UnityEngine;
 
 public class playermov2 : MonoBehaviour
@@ -7,6 +8,8 @@ public class playermov2 : MonoBehaviour
     float h;
     public float speed;
     public AudioSource walkSound;
+    public AudioSource runSound;
+    public AudioSource jumpSound;
     Rigidbody2D rb;
     //animation stuff dw bout it
     public Animator animator;
@@ -28,10 +31,6 @@ public class playermov2 : MonoBehaviour
     public Vector2 wallJumpForce;
     bool wallJumping;
 
-    private AudioSource GetAudio()
-    {
-        return GetComponent<AudioSource>();
-    }
 
     private void Awake()
     {
@@ -72,7 +71,15 @@ public class playermov2 : MonoBehaviour
             
             speed = 15;
             animator.SetBool("IsRunning", true);
-            
+            if (runSound.isPlaying)
+            {
+                walkSound.Stop();
+            }
+            else if (!runSound.isPlaying && !isSliding)
+            {
+                runSound.Play();
+            }
+
         }
 
 
@@ -105,20 +112,33 @@ public class playermov2 : MonoBehaviour
         else
         {
             rb.velocity = new Vector2(h * speed, rb.velocity.y);
-            AudioSource walkSound = GetAudio();
-            if (walkSound != null)
+            if (walkSound.isPlaying)
             {
-            } 
-            else
+                runSound.Stop();
+            } else if (!walkSound.isPlaying && animator.GetFloat("speed") > 0.01 && !isSliding)
             {
-                print(walkSound);
+                walkSound.Play();
             }
+            
+        }
+        if (rb.velocity == new Vector2(0, 0))
+        {
+            walkSound.Stop();
+            runSound.Stop();
         }
 
         //animator thing
         if (!isGrounded && !isSliding)
         {
             animator.SetBool("IsJumping", true);
+            if (jumpSound.isPlaying)
+            {
+                return;
+            } else
+            {
+                jumpSound.Play();
+            }
+
         }
         else
         {
