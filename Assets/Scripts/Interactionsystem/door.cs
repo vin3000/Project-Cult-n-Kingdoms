@@ -41,7 +41,7 @@ public class Door : MonoBehaviour
     }
     public void LoadScene()
     {
-        SceneManager.LoadSceneAsync(0);
+        SceneManager.LoadSceneAsync(2);
     }
 
     // Update is called once per frame

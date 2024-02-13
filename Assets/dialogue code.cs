@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using System;
+using UnityEngine.SceneManagement;
 
 public class dialoguecode : MonoBehaviour
 {
@@ -12,6 +13,10 @@ public class dialoguecode : MonoBehaviour
     //hur den skriver ut dialoguen och hastigheten på den
 
     private int Index;
+
+    public GameObject sceneChanger; //Objekt för scene fade
+    private int dialougeSkips;   //Räknar hur många dialoger som har varit
+
 
     // Start is called before the first frame update
     void Start()
@@ -28,14 +33,27 @@ public class dialoguecode : MonoBehaviour
             if (textcomponent.text == lines[Index])
             {
                 NextLine();
-                
+                Debug.Log("End of line");
+                dialougeSkips += 1;
+                Debug.Log("dialougeSkips = " + dialougeSkips);
             }
             else
             {
                 StopAllCoroutines();
                 textcomponent.text = lines[Index];
+                
             }
         }
+        if (dialougeSkips == 6) //när man sett alla dialoger
+        {
+            sceneChanger.GetComponent<SceneChanger>().FadeToScene(); //fade
+            Invoke(nameof(LoadScene), 1.5f);
+        }
+    }
+
+    public void LoadScene() //laddar startscenen
+    {
+        SceneManager.LoadSceneAsync(0);
     }
     void StartDialogue()
     {
